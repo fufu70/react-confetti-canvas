@@ -2,8 +2,8 @@
   "name": "react-confetti-canvas",
   "version": "0.1.0",
   "description": "Creates a canvas on the page with confetti fluttering inside of it",
-    "main": "build/index.js",
-    "scripts": {
+  "main": "build/index.js",
+  "scripts": {
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
@@ -38,8 +38,8 @@
     "eslint-watch": "^3.1.3",
     "polished": "^1.9.0",
     "prop-types": "^15.6.0",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "styled-components": "^2.2.3"
   }
 }
