@@ -1,6 +1,6 @@
 # react-confetti-canvas
 
-[Gif of what it looks like](assets/canvas.gif)
+![Gif of what it looks like](assets/canvas.gif)
 
 A basic confetti canvas that is missing basic styling to be added to the canvas.
 
