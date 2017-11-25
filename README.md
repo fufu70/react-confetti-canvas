@@ -20,12 +20,13 @@ $ npm install react-confetti-canvas
 
 ## How to Use
 
+To simply add the confetti canvas on to the page import it and include it into the container. The styling must be manually applied through your CSS environment, there is no styling added on to the page from the `react-confetti-canvas`.
+
 ```javascript
 import React from 'react';
 import ConfettiCanvas from 'react-confetti-canvas';
 
-
-const App = ({ name }) => {
+const App = () => {
   return (
     <ConfettiCanvas />
   );
@@ -33,6 +34,194 @@ const App = ({ name }) => {
 
 export default App;
 ```
+
+#### Color
+
+To Change the colors of the ribbon and paper confetti falling down pass an array of arrays that represent the front and back hex color of a ribbon or paper.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      colors={[
+        ['#F1948A', '#C39BD3'],
+        ['#7FB3D5', '#76D7C4'],
+        ['#F0B27A', '#7DCEA0']
+      ]} />
+  );
+  ...
+};
+```
+
+
+#### Duration
+
+The rate at which confetti pieces fall is determined by the duration. The duration stands for the amount of time that has passed in seconds in each frame. The higher the number the faster the confetti pieces fall, the lower the number the slower the confetti pieces fall.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      duration={0.001} />
+  );
+  ...
+};
+```
+
+#### Paper Count
+
+How many paper pieces will fall at one time on the canvas.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      paperCount={100} />
+  );
+  ...
+};
+```
+
+#### Ribbon Count
+
+How many ribbons will fall at one time on the canvas.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      ribbonCount={1} />
+  );
+  ...
+};
+```
+
+#### Ribbon Particle Count
+
+How many connected elements are inside of the ribbon, the higher the number the longer the ribbon will be.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      duration={0.001}
+      paperCount={100}
+      ribbonCount={1}
+      ribbonParticleCount={1}
+      ribbonParticleDist={1}
+      ribbonParticleThick={1}
+      ribbonParticleAngle={1}
+      ribbonParticleMass={1}
+      ribbonParticleDrag={1} />
+  );
+  ...
+};
+```
+
+#### Ribbon Particle Dist
+
+How far apart each particle is on the ribbon, the higher the number the farther apart the connected particles are.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      duration={0.001}
+      paperCount={100}
+      ribbonCount={1}
+      ribbonParticleCount={1}
+      ribbonParticleDist={1}
+      ribbonParticleThick={1}
+      ribbonParticleAngle={1}
+      ribbonParticleMass={1}
+      ribbonParticleDrag={1} />
+  );
+  ...
+};
+```
+
+#### Ribbon Particle Thick
+
+The thickness of the ribbon itself.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      duration={0.001}
+      paperCount={100}
+      ribbonCount={1}
+      ribbonParticleCount={1}
+      ribbonParticleDist={1}
+      ribbonParticleThick={1}
+      ribbonParticleAngle={1}
+      ribbonParticleMass={1}
+      ribbonParticleDrag={1} />
+  );
+  ...
+};
+```
+
+#### Ribbon Particle Angle
+
+The angle at which the ribbons twist to show the backside of the ribbon.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      duration={0.001}
+      paperCount={100}
+      ribbonCount={1}
+      ribbonParticleCount={1}
+      ribbonParticleDist={1}
+      ribbonParticleThick={1}
+      ribbonParticleAngle={1}
+      ribbonParticleMass={1}
+      ribbonParticleDrag={1} />
+  );
+  ...
+};
+```
+
+#### Ribbon Particle Mass
+
+How much the ribbon will be affected by the drag produced by its fall. The higher the value the more it will be affected by drag, the lower the number the less it will be effected; The lower the number the faster it will fall.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      ribbonParticleMass={1} />
+  );
+  ...
+};
+```
+
+#### Ribbon Particle Drag
+
+How much the ribbon will be effected by its mass as it falls. The lower the value the slower it falls and flutters.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <ConfettiCanvas
+      ribbonParticleDrag={1} />
+  );
+  ...
+};
+```
+
 
 ## Notes
 
