@@ -1,6 +1,6 @@
 {
   "name": "react-confetti-canvas",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Creates a canvas on the page with confetti fluttering inside of it",
   "main": "build/index.js",
   "scripts": {
@@ -28,9 +28,19 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.2",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-dynamic-import-node": "^1.0.2",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
     "eslint": "^4.11.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
@@ -38,8 +48,11 @@
     "eslint-watch": "^3.1.3",
     "polished": "^1.9.0",
     "prop-types": "^15.6.0",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "styled-components": "^2.2.3"
+  },
+  "dependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4"
   }
 }

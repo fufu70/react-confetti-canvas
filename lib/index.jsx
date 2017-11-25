@@ -1,8 +1,14 @@
 
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Config from './Config';
 import drawCanvas from './DrawCanvas';
 
-export default React.createClass({
+export default class ConfettiCanvas extends Component {
+
+	static propTypes = {
+		colors: PropTypes.array,
+	};
 
 	handleCanvas(el) {
 
@@ -11,8 +17,8 @@ export default React.createClass({
 			return;
 		}
 
-		drawCanvas(el);
-	},
+		drawCanvas(el, Config);
+	}
 
 	render() {
 
@@ -20,4 +26,4 @@ export default React.createClass({
 			<canvas id="confetti" height="1" width="1" ref={ this.handleCanvas } />
 		);
 	}
-});
+}
