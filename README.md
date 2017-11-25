@@ -94,7 +94,7 @@ const App = () => {
   ...
   return (
     <ConfettiCanvas
-      ribbonCount={1} />
+      ribbonCount={11} />
   );
   ...
 };
@@ -109,15 +109,7 @@ const App = () => {
   ...
   return (
     <ConfettiCanvas
-      duration={0.001}
-      paperCount={100}
-      ribbonCount={1}
-      ribbonParticleCount={1}
-      ribbonParticleDist={1}
-      ribbonParticleThick={1}
-      ribbonParticleAngle={1}
-      ribbonParticleMass={1}
-      ribbonParticleDrag={1} />
+      ribbonParticleCount={30} />
   );
   ...
 };
@@ -132,15 +124,7 @@ const App = () => {
   ...
   return (
     <ConfettiCanvas
-      duration={0.001}
-      paperCount={100}
-      ribbonCount={1}
-      ribbonParticleCount={1}
-      ribbonParticleDist={1}
-      ribbonParticleThick={1}
-      ribbonParticleAngle={1}
-      ribbonParticleMass={1}
-      ribbonParticleDrag={1} />
+      ribbonParticleDist={8.0} />
   );
   ...
 };
@@ -155,15 +139,7 @@ const App = () => {
   ...
   return (
     <ConfettiCanvas
-      duration={0.001}
-      paperCount={100}
-      ribbonCount={1}
-      ribbonParticleCount={1}
-      ribbonParticleDist={1}
-      ribbonParticleThick={1}
-      ribbonParticleAngle={1}
-      ribbonParticleMass={1}
-      ribbonParticleDrag={1} />
+      ribbonParticleThick={8.0} />
   );
   ...
 };
@@ -178,15 +154,7 @@ const App = () => {
   ...
   return (
     <ConfettiCanvas
-      duration={0.001}
-      paperCount={100}
-      ribbonCount={1}
-      ribbonParticleCount={1}
-      ribbonParticleDist={1}
-      ribbonParticleThick={1}
-      ribbonParticleAngle={1}
-      ribbonParticleMass={1}
-      ribbonParticleDrag={1} />
+      ribbonParticleAngle={45} />
   );
   ...
 };
@@ -216,7 +184,7 @@ const App = () => {
   ...
   return (
     <ConfettiCanvas
-      ribbonParticleDrag={1} />
+      ribbonParticleDrag={0.05} />
   );
   ...
 };
