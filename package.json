@@ -1,6 +1,6 @@
 {
   "name": "react-confetti-canvas",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Creates a canvas on the page with confetti fluttering inside of it",
   "main": "build/index.js",
   "scripts": {
