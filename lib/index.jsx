@@ -38,12 +38,15 @@ export default class ConfettiCanvas extends Component {
 
 		if (el === null) {
 			window.removeEventListener('resize', window.resizeConfetti, false);
+			if (this.canvasConfetti) {
+				this.canvasConfetti.stop();
+			}
 			return;
 		}
 
 		console.log(this.getConfig());
 
-		drawCanvas(el, this.getConfig());
+		this.canvasConfetti = drawCanvas(el, this.getConfig());
 	}
 
 	getConfig = () => {
