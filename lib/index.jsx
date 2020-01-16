@@ -44,8 +44,6 @@ export default class ConfettiCanvas extends Component {
 			return;
 		}
 
-		console.log(this.getConfig());
-
 		this.canvasConfetti = drawCanvas(el, this.getConfig());
 	}
 
